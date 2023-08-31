@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: auto;
+            margin-top: 100px;
+            width: 1126px;
+            height: 122px;
+
+        }
+        .block-left {
+            width: 12px;
+            height: 100%;
+            background-color: #ED3315;
+            float: left;
+        }
+        .block-right {
+            width: 1114px;
+            height: 100%;
+            background-color: #FBD6D0;
+            padding-left: 32px;
+        }
+        .p-first, .p-second {
+            font-size: 23px;
+            display: inline-block;
+            
+        }
+        .p-first {
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        .p-second{
+            margin-top: 10px;
+        }
+        .container .block-right a {
+            background-color: #E7DDDD;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block-left"></div>
+        <div class="block-right">
+            <div class="p-first">These docs are old and won't be update. Go to <a href="#">react.dev</a> for the new React docs.</div>
+            <div class="p-second">The new <a href="#">Quick Start</a> teaches modern React and includes live examples.</div>
+        </div>
+    </div>
+</body>
+</html>
