@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <div class="search-bar">
+        <div class="icon-search"><i class="fa fa-search" aria-hidden="true"></i></div>
+        <input placeholder="Search" class="search"/>
+        <div class="icon-x"><i class="fa fa-times" aria-hidden="true"></i></div>
+    </div>
+
+
+<script type="text/javascript">
+
+    $(window).click(function() {
+        $('.search-bar').css({
+            'background-color': '#20232A',
+        });
+
+        $('.search').css({
+            'background-color': '#20232A',
+            'border': '0'
+        });
+        $('.icon-x').css({
+            'opacity':'0'
+        });
+    });
+    
+    $('.search').click(function() {
+        $('.search-bar').css({
+            'background-color': '#373940',
+        });
+
+        $('.search').css({
+            'background-color': '#373940',
+            'border': '0'
+        });
+        event.stopPropagation();
+    });
+
+    $('.search').on('keyup', function() {
+        if (this.value.length >= 1) {
+            $('.icon-x').css({
+                'opacity':'1'
+            });
+        }
+        else {
+            $('.icon-x').css({
+                'opacity':'0'
+            });
+        }
+    });
+
+    $('.icon-x').click(function() {
+        $('.search').val('');
+    });
+    
+
+</script>
+</body>
+</html>
