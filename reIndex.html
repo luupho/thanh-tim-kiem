@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #20232a;
+      }
+      .search {
+        display: flex;
+        align-items: center;
+        width: 224px;
+        background-color: #20232a;
+        height: 30px;
+        padding: 4px 4px;
+        overflow: hidden;
+        border-radius: 4px;
+      }
+      .search:focus-within {
+        background-color: #373940 !important;
+      }
+      .search input {
+        outline: unset;
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-size: 16px;
+      }
+      .search input::placeholder {
+        font-weight: 200;
+      }
+      .icon-x,
+      .icon-search {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent !important;
+      }
+      .icon-search {
+        color: white;
+        padding-right: 4px;
+      }
+      .icon-x {
+        cursor: pointer;
+        background-color: transparent;
+        color: #3a62a4;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="search">
+      <div class="icon-search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+      <input placeholder="Search" class="search" />
+      <div class="icon-x"><i class="fa fa-times" aria-hidden="true"></i></div>
+    </div>
+  </body>
+</html>
